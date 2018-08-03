@@ -14,3 +14,148 @@ class Simple
 P2:
 ---
 
+class A
+{
+	public static void main(String args[])
+	{
+		System.out.println("Welcome to Java Programming...");
+	}
+}
+
+P3:
+---
+
+//Save the entire below code with file name as Hard.java
+
+class B
+{
+	public  void printB()
+	{
+		System.out.println("Hi am from B class..");
+		
+	}
+}
+class C
+{
+	public  void printC()
+	{
+		System.out.println("Hi am from C class..");
+		
+	}
+}
+class D
+{
+	public  void printD()
+	{
+		System.out.println("Hi am from B class..");
+		
+	}
+}
+class Hard
+{
+	public static void main(String args[])
+	{
+		B b1 = new B();
+		C c1 = new C();
+		D d1 = new D();
+
+		b1.printB();
+		c1.printC();
+		d1.printD();
+	}
+}
+
+//To Compile: 	C:/>javac -d ../classes Hard.java
+//To Execute:   C:/>java -cp ../classes Hard
+/* here after Compiling the Hard.java file, the compiler will generate total 4 .class file named as B.class C.class D.class and Hard.class
+
+O/P:
+----
+Compile:  E:\jdk1.8.0_102\bin\jdk1.8.0_103\src>javac -d ../classes Hard.java
+\
+Running: E:\jdk1.8.0_102\bin\jdk1.8.0_103\src>java -cp ../classes Hard
+Hi am from B class..
+Hi am from C class..
+Hi am from B class..
+
+*/
+
+/* 
+P4:
+//Example to understand the types of variables in java
+claSS E
+{
+  int data = 50;
+  static int m = 100;
+  void method()
+  {
+	int n = 90;
+  }
+}	
+*/
+
+/*
+P5: Java Variable Example: Add Two Numbers
+class F
+{
+	public static void main(String args[])
+	{
+		int a = 10;
+		int b = 20;
+		int c = a + b;
+		System.out.println("Sum of a & b: "+c);
+	}
+}
+O/P:
+----
+E:\jdk1.8.0_102\bin\jdk1.8.0_103\src>javac -d ../classes F.java
+E:\jdk1.8.0_102\bin\jdk1.8.0_103\src>java -cp ../classes F
+Sum of a & b: 30
+
+*/
+
+/*
+P6:Java Variable Example: Widening
+class G
+{
+	public static void main(String args[])
+	{
+		int a = 10;
+		float f = a;
+
+		System.out.println("Autowidening of int(a) to float(f): "+f);
+	}
+}
+O/P:
+E:\jdk1.8.0_102\bin\jdk1.8.0_103\src>javac -d ../classes G.java
+E:\jdk1.8.0_102\bin\jdk1.8.0_103\src>java -cp ../classes G
+Autowidening of int(a) to float(f): 10.0
+
+*/
+/*
+P6:
+
+//Java Variable Example: Narrowing (Typecasting)
+
+class H
+{  
+	public static void main(String[] args)
+	{  
+		float f=10.5f;  
+		//int a=f;//Compile time error  
+		int a=(int)f;  
+		System.out.println("f: "+f);  
+		System.out.println("a: "+a);  
+	}
+}  
+
+/*
+E:\jdk1.8.0_102\bin\jdk1.8.0_103\src>javac -d ../classes H.java
+
+
+E:\jdk1.8.0_102\bin\jdk1.8.0_103\src>java -cp ../classes H
+
+f: 10.5
+a: 10
+*/
+*/
