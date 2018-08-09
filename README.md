@@ -158,4 +158,120 @@ E:\jdk1.8.0_102\bin\jdk1.8.0_103\src>java -cp ../classes H
 f: 10.5
 a: 10
 */
+/*
+P7:
+//Java Variable Example: Overflow
+class I
+{
+	public static void main(String args[])
+	{
+		int a = 130;
+		byte b = (byte)a;
+		System.out.println("a: "+a);
+		System.out.println("b: "+b);
+	}
+}
+
+
+O/P:
+E:\jdk1.8.0_102\bin\jdk1.8.0_103\src>javac -d ../classes I.java
+
+E:\jdk1.8.0_102\bin\jdk1.8.0_103\src>java -cp ../classes I
+
+a: 130
+b: -126
+
 */
+
+/*
+P8:
+//Java Variable Example: Adding Lower Type
+
+class J
+{
+	public static void main(String args[])
+	{
+		byte a = 10;
+		byte b = 10;
+		byte c = (byte)(a+b);
+		System.out.println("c: "+c);
+	}
+}
+/*
+O/\P:
+
+E:\jdk1.8.0_102\bin\jdk1.8.0_103\src>javac -d ../classes J.java
+
+E:\jdk1.8.0_102\bin\jdk1.8.0_103\src>java -cp ../classes J
+
+c: 20
+
+*/
+*/
+/*
+P9:
+//Java Unary Operator Example1: ++ and --
+class K
+{
+	public static void main(String args[])
+	{
+		int a = 10;
+		
+		System.out.println("a :"+a); //10
+		System.out.println("a++ :"+ a++); //10
+		System.out.println("a-- :"+ a--); //11
+		System.out.println("++a :"+ ++a);//11		
+		System.out.println("--a :"+ --a);//10
+		System.out.println("a :"+a);//10
+	}
+}
+/*
+E:\jdk1.8.0_102\bin\jdk1.8.0_103\src>javac -d ../classes K.java
+
+E:\jdk1.8.0_102\bin\jdk1.8.0_103\src>java -cp ../classes K
+
+a :10
+a++ :10
+a-- :11
+++a :11
+--a :10
+a :10
+
+*/
+
+*/
+/*
+P10:
+//Java Unary Operator Example 2: ++ and --
+
+class OperatorExample
+{  
+	public static void main(String args[])
+	{  
+		int a=10;  
+		int b=10;  
+		System.out.println(a++ + ++a);//10+12=22  
+		System.out.println(b++ + b++);//10+11=21  
+	}
+} 
+*/
+
+/*
+P11:
+class Testarray
+{
+public static void main(String args[])
+{
+int a = 10;
+int b = 10;
+System.out.println(a++ + ++a);
+//                 10     12 = 22
+System.out.println(b++ + ++b);
+//                 10    12   = 22
+System.out.println(b++ + b++);//25
+//                
+
+}
+}
+*/
+
