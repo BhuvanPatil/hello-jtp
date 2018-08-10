@@ -257,21 +257,60 @@ class OperatorExample
 */
 
 /*
-P11:
+P11: Java Unary Operator Example 2: ++ and --
 class Testarray
 {
-public static void main(String args[])
-{
-int a = 10;
-int b = 10;
-System.out.println(a++ + ++a);
-//                 10     12 = 22
-System.out.println(b++ + ++b);
-//                 10    12   = 22
-System.out.println(b++ + b++);//25
-//                
+	public static void main(String args[])
+	{
+		int a = 10;
+		int b = 10;
+		System.out.println(a++ + ++a);
+		//                 10     12 = 22
+		System.out.println(b++ + ++b);
+		//                 10    12   = 22
+		System.out.println(b++ + b++);//25
+	//                
 
-}
+	}
 }
 */
+
+/*
+P12: Java Unary Operator Example: ~ and !
+//Java Unary Operator Example: ~ and !
+class Op1
+{
+	public static void main(String args[])
+	{
+		int a = 10;
+		int b = -10;
+		boolean c = true;
+		boolean d = false;
+		System.out.println("a: "+ ~a);// -11
+		System.out.println("b: "+ ~b);// 9
+		System.out.println("!c: "+ !c);// false
+		System.out.println("!d: "+ !d);// true
+	}
+}
+
+/*
+O/P:
+E:\Software\JDK\jdk-7u17-windows-i586\lib\Operators\src>javac -d ../classes Op1.
+java
+
+E:\Software\JDK\jdk-7u17-windows-i586\lib\Operators\src>java -cp ../classes Op1
+a: -11
+b: 9
+!c: false
+!d: true
+
+*/
+
+*/
+
+/*
+P13:Java Arithmetic Operator Example
+
+
+
 
