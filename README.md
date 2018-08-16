@@ -310,7 +310,495 @@ b: 9
 
 /*
 P13:Java Arithmetic Operator Example
+class Op2
+{
+	public static void main(String args[])
+	{
+		int a = 10;
+	    	int b = 5;
+		System.out.println(a+b);
+		System.out.println(a-b);
+		System.out.println(a*b);
+		System.out.println(a/b);
+		System.out.println(a%b);
+	}
+}
+/*
+O/P:
+-----
+15                                                                                                                             
+5                                                                                                                              
+50                                                                                                                             
+2                                                                                                                              
+0   
+*/
+*/
+/*
+P14:Java Arithmetic Operator Example: Expression
+class Op3
+{  
+	public static void main(String args[])
+	{  
+		System.out.println(10*10/5+3-1*4/2);  
+	}
+}  
 
+/*
+O/P:
+----
+21
 
+*/
+*/
 
+/*
+P15: Java Left Shift Operator Example
+class Op4
+{  
+	public static void main(String args[])
+	{  
+		System.out.println(10<<2);//10*2^2=10*4=40  
+		System.out.println(10<<3);//10*2^3=10*8=80  
+		System.out.println(20<<2);//20*2^2=20*4=80  
+		System.out.println(15<<4);//15*2^4=15*16=240  
+	}
+}  
+Output:
+
+40
+80
+80
+240
+
+*/
+
+/*
+P16: Java Right Shift Operator Example
+//The Java right shift operator >> is used to move left operands value to right by the number of bits specified by the right operand.
+class OperatorExample
+{  
+	public static void main(String args[])
+	{  
+		System.out.println(10>>2);//10/2^2=10/4=2  
+		System.out.println(20>>2);//20/2^2=20/4=5  
+		System.out.println(20>>3);//20/2^3=20/8=2  
+	}
+}  
+O/P:
+2
+5
+2
+
+*/
+/*
+P17: Java Shift Operator Example: >> vs >>>
+class OperatorExample
+{  
+    public static void main(String args[])
+    {  
+	    //For positive number, >> and >>> works same  
+	    System.out.println(20>>2);  
+	    System.out.println(20>>>2);  
+	    //For negative number, >>> changes parity bit (MSB) to 0  
+	    System.out.println(-20>>2);  
+	    System.out.println(-20>>>2);  
+    }
+}  
+O/P:
+5                                                                                                                              
+5                                                                                                                              
+-5                                                                                                                             
+1073741819 
+*/
+/*
+P18: Java AND Operator Example: Logical && and Bitwise &
+
+class OperatorExample{  
+public static void main(String args[]){  
+int a=10;  
+int b=5;  
+int c=20;  
+System.out.println(a<b&&a<c);//false && true = false  
+System.out.println(a<b&a<c);//false & true = false  
+}}  
+Output:
+
+false
+false
+
+*/
+/*
+P19: Java AND Operator Example: Logical && vs Bitwise &
+class OperatorExample
+{  
+	public static void main(String args[])
+	{  
+		int a=10;  
+		int b=5;  
+		int c=20;  
+		System.out.println(a<b&&a++<c);//false && true = false  
+		System.out.println(a);//10 because second condition is not checked  
+		System.out.println(a<b&a++<c);//false && true = false  
+		System.out.println(a);//11 because second condition is checked  
+	}
+}  
+Output:
+
+false
+10
+false
+11
+
+*/
+
+/*
+P20: Java OR Operator Example: Logical || and Bitwise |
+The logical || operator doesn't check second condition if first condition is true. It checks second condition only if first one is false.
+
+The bitwise | operator always checks both conditions whether first condition is true or false.
+
+class OperatorExample
+{  
+	public static void main(String args[])
+	{  
+		int a=10;  
+		int b=5;  
+		int c=20;  
+		System.out.println(a>b||a<c);//true || true = true  
+		System.out.println(a>b|a<c);//true | true = true  
+		//|| vs |  
+		System.out.println(a>b||a++<c);//true || true = true  
+		System.out.println(a);//10 because second condition is not checked  
+		System.out.println(a>b|a++<c);//true | true = true  
+		System.out.println(a);//11 because second condition is checked  
+	}
+}  
+Output:
+
+true
+true
+true
+10
+true
+11
+
+*/
+
+/*
+P21:ava Ternary Operator Example
+class OperatorExample
+{  
+	public static void main(String args[])
+	{  
+		int a=2;  
+		int b=5;  
+		int min=(a<b)?a:b;  
+		System.out.println("min: "+min);  
+	}
+}  
+Output:
+
+min: 2
+
+*/
+
+/*
+P22:
+class OperatorExample
+{  
+	public static void main(String args[])
+	{  
+		int a=10;  
+		int b=5;  
+		int min=(a<b)?a:b;  
+		System.out.println("min: "+min);  
+	}
+}  
+Output:
+
+5
+
+*/
+/*
+//Java Assignment Operators
+P23:Java Assignment Operator Example
+class OperatorExample
+{  
+	public static void main(String args[])
+	{  
+		int a=10;  
+		int b=20;  
+		a += 4;//a=a+4 (a=10+4)  
+		b -= 4;//b=b-4 (b=20-4)  
+		System.out.println(a);  
+		System.out.println(b);  
+	}
+}  
+Output:
+
+14
+16
+*/
+/*
+P24: Java Assignment Operator Example
+class OperatorExample
+{  
+	public static void main(String[] args)
+	{  
+		int a=10;  
+		a += 3;//10+3  
+		System.out.println(a);  
+		a -= 4;//13-4  
+		System.out.println(a);  
+		a *= 2;//9*2  
+		System.out.println(a);  
+		a /= 2;//18/2  
+		System.out.println(a);  
+	}
+}  
+Output:
+
+13
+9
+18
+9
+
+*/
+/*
+P25: Java Assignment Operator Example: Adding short
+class OperatorExample
+{  
+	public static void main(String args[])
+	{  
+	short a=10;  
+	short b=10;  
+	//a+=b;//a=a+b internally so fine  
+	a=a+b;//Compile time error because 10+10=20 now int  
+	System.out.println(a);  
+	}
+}  
+Output:
+
+Compile time error
+
+*/
+
+/*
+P26:After type cast:
+
+class OperatorExample
+{  
+	public static void main(String args[])
+	{  
+		short a=10;  
+		short b=10;  
+		a=(short)(a+b);//20 which is int now converted to short  
+		System.out.println(a);  
+	}
+}  
+Output:
+
+20
+
+*/
+//-------------------------------------------------------------------------
+/*
+//Java Control Statements
+P1:public class IfExample {  
+public static void main(String[] args) {  
+    int age=20;  
+    if(age>18){  
+        System.out.print("Age is greater than 18");  
+    }  
+}  
+}  
+Test it Now
+Output:
+
+Age is greater than 18
+
+*/
+/*
+P2: public class IfElseExample {  
+public static void main(String[] args) {  
+    int number=13;  
+    if(number%2==0){  
+        System.out.println("even number");  
+    }else{  
+        System.out.println("odd number");  
+    }  
+}  
+}  
+Test it Now
+Output:
+
+odd number
+*/
+
+/*
+//Java if-else-if ladder Statement
+The if-else-if ladder statement executes one condition from multiple statements.
+
+Syntax:
+
+if(condition1)
+{  
+	//code to be executed if condition1 is true  
+}
+else if(condition2)
+{  
+	//code to be executed if condition2 is true  
+}  
+else if(condition3)
+{  
+	//code to be executed if condition3 is true  
+}  
+...  
+else
+{  
+	//code to be executed if all the conditions are false  
+}  
+*/
+/*
+P3: Java if-else-if ladder Statement
+public class IfElseIfExample 
+{  
+	public static void main(String[] args)
+	{  
+	    int marks=65;        
+	    if(marks<50)
+	    {  
+		System.out.println("fail");  
+	    }  
+	    else if(marks>=50 && marks<60)
+	    {  
+		System.out.println("D grade");  
+	    }  
+	    else if(marks>=60 && marks<70)
+	    {  
+		System.out.println("C grade");  
+	    }  
+	    else if(marks>=70 && marks<80)
+	    {  
+		System.out.println("B grade");  
+	    }  
+	    else if(marks>=80 && marks<90)
+	    {  
+		System.out.println("A grade");  
+	    }else if(marks>=90 && marks<100)
+	    {  
+		System.out.println("A+ grade");  
+	    }
+	    else
+	    {  
+		System.out.println("Invalid!");  
+	    }  
+	}  
+}  
+Output:
+
+C grade
+*/
+/*
+//Java Switch Statement
+P4: public class SwitchExample
+{  
+	public static void main(String[] args) 
+	 {  
+	    //Declaring a variable for switch expression  
+	    int number=20;  
+	    //Switch expression  
+	    switch(number){  
+	    //Case statements  
+	    case 10: System.out.println("10");  
+	    break;  
+	    case 20: System.out.println("20");  
+	    break;  
+	    case 30: System.out.println("30");  
+	    break;  
+	    //Default case statement  
+	    default:System.out.println("Not in 10, 20 or 30");  
+    	}  
+    }  
+}  
+*/
+
+/*
+P5:
+
+public class Switch
+{
+	public static void main(String args[])
+	{
+	    int age = 3;
+	    switch(age)
+	    {
+	        case 1:
+	                System.out.println("your age is: 1");
+	                break;
+	        case 2: 
+	                System.out.println("your age is: 2");
+	                break;
+	        case 3:
+	                System.out.println("your age is: 3");
+	                break;
+	        case 4:
+	                System.out.println("your age is: 4");
+	                break;
+	        default: System.out.println("not in 1, 2, 3, 4");
+	    }
+	}
+}
+
+O/P:
+  
+
+*/
+
+/*
+Finding Month Example:
+
+//Java Program to demonstrate the example of Switch statement  
+//where we are printing month name for the given number  
+public class SwitchMonthExample 
+{    
+	public static void main(String[] args)
+	{    
+		    //Specifying month number  
+		    int month=7;    
+		    String monthString="";  
+		    //Switch statement  
+		    switch(month){    
+		    //case statements within the switch block  
+		    case 1: monthString="1 - January";  
+		    break;    
+		    case 2: monthString="2 - February";  
+		    break;    
+		    case 3: monthString="3 - March";  
+		    break;    
+		    case 4: monthString="4 - April";  
+		    break;    
+		    case 5: monthString="5 - May";  
+		    break;    
+		    case 6: monthString="6 - June";  
+		    break;    
+		    case 7: monthString="7 - July";  
+		    break;    
+		    case 8: monthString="8 - August";  
+		    break;    
+		    case 9: monthString="9 - September";  
+		    break;    
+		    case 10: monthString="10 - October";  
+		    break;    
+		    case 11: monthString="11 - November";  
+		    break;    
+		    case 12: monthString="12 - December";  
+		    break;    
+		    default:System.out.println("Invalid Month!");    
+	    }    
+    			//Printing month of the given number  
+   			 System.out.println(monthString);  
+	}    
+}   
+*/
 
