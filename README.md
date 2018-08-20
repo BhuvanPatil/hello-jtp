@@ -756,7 +756,7 @@ O/P:
 */
 
 /*
-Finding Month Example:
+P6: Finding Month Example:
 
 //Java Program to demonstrate the example of Switch statement  
 //where we are printing month name for the given number  
@@ -801,4 +801,209 @@ public class SwitchMonthExample
 	}    
 }   
 */
+/*
+P7: //Java Switch Example where we are omitting the  
+//break statement  
+public class SwitchExample2 {  
+public static void main(String[] args) {  
+    int number=20;  
+    //switch expression with int value  
+    switch(number){  
+    //switch cases without break statements  
+    case 10: System.out.println("10");  
+    case 20: System.out.println("20");  
+    case 30: System.out.println("30");  
+    default:System.out.println("Not in 10, 20 or 30");  
+    }  
+}  
+}  
+O/P:
+----
+20
+30
+Not in 10, 20 or 30
 
+*/
+
+/*
+P8: //Java Program to demonstrate the use of Java Switch  
+//statement with String  
+public class SwitchStringExample {    
+public static void main(String[] args) {    
+    //Declaring String variable  
+    String levelString="Expert";  
+    int level=0;  
+    //Using String in Switch expression  
+    switch(levelString){    
+    //Using String Literal in Switch case  
+    case "Beginner": level=1;  
+    break;    
+    case "Intermediate": level=2;  
+    break;    
+    case "Expert": level=3;  
+    break;    
+    default: level=0;  
+    break;  
+    }    
+    System.out.println("Your Level is: "+level);  
+}    
+}
+O/P:
+Your Level is: 3
+
+*/
+/*
+P9:
+//Java Program to demonstrate the use of Java Nested Switch  
+public class NestedSwitchExample {    
+    public static void main(String args[])  
+      {  
+      //C - CSE, E - ECE, M - Mechanical  
+        char branch = 'C';                 
+        int collegeYear = 4;  
+        switch( collegeYear )  
+        {  
+            case 1:  
+                System.out.println("English, Maths, Science");  
+                break;  
+            case 2:  
+                switch( branch )   
+                {  
+                    case 'C':  
+                        System.out.println("Operating System, Java, Data Structure");  
+                        break;  
+                    case 'E':  
+                        System.out.println("Micro processors, Logic switching theory");  
+                        break;  
+                    case 'M':  
+                        System.out.println("Drawing, Manufacturing Machines");  
+                        break;  
+                }  
+                break;  
+            case 3:  
+                switch( branch )   
+                {  
+                    case 'C':  
+                        System.out.println("Computer Organization, MultiMedia");  
+                        break;  
+                    case 'E':  
+                        System.out.println("Fundamentals of Logic Design, Microelectronics");  
+                        break;  
+                    case 'M':  
+                        System.out.println("Internal Combustion Engines, Mechanical Vibration");  
+                        break;  
+                }  
+                break;  
+            case 4:  
+                switch( branch )   
+                {  
+                    case 'C':  
+                        System.out.println("Data Communication and Networks, MultiMedia");  
+                        break;  
+                    case 'E':  
+                        System.out.println("Embedded System, Image Processing");  
+                        break;  
+                    case 'M':  
+                        System.out.println("Production Technology, Thermal Engineering");  
+                        break;  
+                }  
+                break;  
+        }  
+    }  
+}  
+O/P:
+Data Communication and Networks, MultiMedia
+
+*/
+
+/*
+P10: 
+//Java Program to demonstrate the use of Enum  
+//in switch statement  
+public class JavaSwitchEnumExample {      
+       public enum Day {  Sun, Mon, Tue, Wed, Thu, Fri, Sat  }    
+       public static void main(String args[])    
+       {    
+         Day[] DayNow = Day.values();    
+           for (Day Now : DayNow)    
+           {    
+                switch (Now)    
+                {    
+                    case Sun:    
+                        System.out.println("Sunday");    
+                        break;    
+                    case Mon:    
+                        System.out.println("Monday");    
+                        break;    
+                    case Tue:    
+                        System.out.println("Tuesday");    
+                        break;         
+                    case Wed:    
+                        System.out.println("Wednesday");    
+                        break;    
+                    case Thu:    
+                        System.out.println("Thursday");    
+                        break;    
+                    case Fri:    
+                        System.out.println("Friday");    
+                        break;    
+                    case Sat:    
+                        System.out.println("Saturday");    
+                        break;    
+                }    
+            }    
+        }    
+} 
+O/P:
+Sunday
+Monday
+Twesday
+Wednesday
+Thursday
+Friday
+Saturday
+
+*/
+/*
+P11:
+//Java Program to demonstrate the use of Wrapper class  
+//in switch statement  
+public class WrapperInSwitchCaseExample {       
+       public static void main(String args[])  
+       {         
+            Integer age = 18;        
+            switch (age)  
+            {  
+                case (16):            
+                    System.out.println("You are under 18.");  
+                    break;  
+                case (18):                
+                    System.out.println("You are eligible for vote.");  
+                    break;  
+                case (65):                
+                    System.out.println("You are senior citizen.");  
+                    break;  
+                default:  
+                    System.out.println("Please give the valid age.");  
+                    break;  
+            }             
+        }  
+}  
+
+O/P:
+You are eligible for vote.
+*/
+
+/*
+P11: Loops in Java: 1. for loop 2. while loop 3. do-while loop
+public class ForExample {  
+public static void main(String[] args) {  
+    //Code of Java for loop  
+    for(int i=1;i<=10;i++){  
+        System.out.println(i);  
+    }  
+}  
+}  
+
+
+*/
