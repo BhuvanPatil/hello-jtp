@@ -996,14 +996,67 @@ You are eligible for vote.
 
 /*
 P11: Loops in Java: 1. for loop 2. while loop 3. do-while loop
-public class ForExample {  
-public static void main(String[] args) {  
-    //Code of Java for loop  
-    for(int i=1;i<=10;i++){  
-        System.out.println(i);  
-    }  
-}  
+public class ForExample 
+{  
+	public static void main(String[] args) 
+	{  
+		//Code of Java for loop  
+		for(int i=1;i<=10;i++)
+		{  
+			System.out.println(i);  
+		}  
+	}  
 }  
 
+
+*/
+/*
+P12: Example of for loop
+public class FL
+{
+	public static void main(String[] args)
+	{
+	    for(int i = 1; i<=10;i++)
+	    {
+		    System.out.println(i);
+		    if(i%2==0)
+		    {
+		        System.out.println("-----------");
+		        System.out.println("Even Numbers are: ");
+		        System.out.println("-----------");
+		        System.out.println(i);
+		    }
+		    else if(i%2!=0)
+		    {
+		        System.out.println("-----------");
+		        System.out.println("Odd Numbers are: ");
+		        System.out.println("-----------");
+		        System.out.println(i);
+		    }
+		  }
+	    }
+}
+
+*/
+/*
+P12: for each loop
+
+public class FEL1
+{
+	public static void main(String[] args)
+	{
+	   System.out.println("main begin");
+	    int arr[] = {2,34,23,45,56,67};	    
+	    for(int i:arr)//for-each loop
+	    {
+	        System.out.println("i: "+i);
+	    }
+	    System.out.println("main begin");
+	}
+}
+
+*/
+/*
+P13:
 
 */
